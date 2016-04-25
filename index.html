@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>A Countdown of Ice and Fire</title>
+</head>
+<body>
+	 <style>
+		body {
+			background-image: url("https://images5.alphacoders.com/403/403408.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	</style> 
+	<style>
+		#countdown span {
+			height: 300px;
+			font-size: 60px;
+			font-weight: normal;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-top: 200px;
+			color: white;
+			font-family:Arial;
+			text-align: center;
+			vertical-align: bottom;
+			/*line-height: 600px;
+			vertical-align: middle;
+			font-family: "Brush Script MT";*/
+		}
+	</style>
+	<!-- <div style="display: table; height: 600px; overflow: hidden; margin-left: 60px;">
+     <div style="display: table-cell; vertical-align: middle; text-align: center">
+       <div id="countdown" align="center">
+       </div>
+     </div>
+   </div> -->
+   <div id="countdown" style="
+   color: white;
+ position:fixed;
+ top:30%;
+ left:5%;text-align: center"></div>
+   <div style="
+   color: white;
+ position:fixed;
+ bottom:0;
+ left:90%;"><a href = "https://github.com/srivas15/howLongForGoT">How did I make this?</a></div>
+	<!-- <div id="countdown"></div> -->
+<script type="text/javascript">
+	// set the date we're counting down to
+	var d1start = new Date("April 24, 2016 21:00:00");
+	var d1end = new Date("April 24, 2016 22:00:00");
+	
+	var d2start = new Date("May 1, 2016 21:00:00");
+	var d2end = new Date("May 1, 2016 22:00:00");
+	
+	var d3start = new Date("May 8, 2016 21:00:00");
+	var d3end = new Date("May 8, 2016 22:00:00");
+	
+	var d4start = new Date("May 15, 2016 21:00:00");
+	var d4end = new Date("May 15, 2016 22:00:00");
+	
+	var d5start = new Date("May 22, 2016 21:00:00");
+	var d5end = new Date("May 22, 2016 22:00:00");
+	
+	var d6start = new Date("May 29, 2016 21:00:00");
+	var d6end = new Date("May 29, 2016 22:00:00");
+	
+	var d7start = new Date("June 5, 2016 21:00:00");
+	var d7end = new Date("June 5, 2016 22:00:00");
+	
+	var d8start = new Date("June 12, 2016 21:00:00");
+	var d8end = new Date("June 12, 2016 22:00:00");
+	
+	var d9start = new Date("June 19, 2016 21:00:00");
+	var d9end = new Date("June 19, 2016 22:00:00");
+	
+	var d10start = new Date("June 26, 2016 21:00:00");
+	var d10end = new Date("June 26, 2016 22:00:00");
+
+	var d11start = new Date("April 1, 2017 21:00:00");
+	
+	var curr = new Date();
+	var target_date = 0;
+
+	var rightNow = 0;
+
+	if(((curr.getTime() > d1start.getTime()) && (curr.getTime() < d1end.getTime())) || ((curr.getTime() > d2start.getTime()) && (curr.getTime() < d2end.getTime())) || ((curr.getTime() > d3start.getTime()) && (curr.getTime() < d3end.getTime())) || ((curr.getTime() > d4start.getTime()) && (curr.getTime() < d4end.getTime())) || ((curr.getTime() > d5start.getTime()) && (curr.getTime() < d5end.getTime())) || ((curr.getTime() > d6start.getTime()) && (curr.getTime() < d6end.getTime())) || ((curr.getTime() > d7start.getTime()) && (curr.getTime() < d7end.getTime())) || ((curr.getTime() > d8start.getTime()) && (curr.getTime() < d8end.getTime())) || ((curr.getTime() > d9start.getTime()) && (curr.getTime() < d9end.getTime())) || ((curr.getTime() > d10start.getTime()) && (curr.getTime() < d10end.getTime())))
+	{
+		rightNow = 1;
+	}
+	else if(curr.getTime() < d1start.getTime())
+	{
+		target_date = d1start.getTime();
+	}
+	else if((curr.getTime() > d1end.getTime()) && (curr.getTime() < d2start.getTime()))
+	{
+		target_date = d2start.getTime();
+	}
+	else if ((curr.getTime() > d2end.getTime()) && (curr.getTime() < d3start.getTime())) 
+	{
+		target_date = d3start.getTime();
+	}
+	else if ((curr.getTime() > d3end.getTime()) && (curr.getTime() < d4start.getTime())) 
+	{
+		target_date = d4start.getTime();	
+	}
+	else if ((curr.getTime() > d4end.getTime()) && (curr.getTime() < d5start.getTime())) 
+	{
+		target_date = d5start.getTime();
+	}
+	else if ((curr.getTime() > d5end.getTime()) && (curr.getTime() < d6start.getTime())) 
+	{
+		target_date = d6start.getTime();	
+	}
+	else if ((curr.getTime() > d6end.getTime()) && (curr.getTime() < d7start.getTime())) 
+	{
+		target_date = d7start.getTime();	
+	}
+	else if ((curr.getTime() > d7end.getTime()) && (curr.getTime() < d8start.getTime())) 
+	{
+		target_date = d8start.getTime();	
+	}
+	else if ((curr.getTime() > d8end.getTime()) && (curr.getTime() < d9start.getTime())) 
+	{
+		target_date = d9start.getTime();	
+	}
+	else if ((curr.getTime() > d9end.getTime()) && (curr.getTime() < d10start.getTime())) 
+	{
+		target_date = d10start.getTime();		
+	}
+	else if (curr.getTime() > d10end.getTime())
+	{
+		target_date = d11start.getTime();
+	}
+	//document.write('<font color = "white">'+target_date+'</font>');
+	var days, hours, minutes, seconds, ms_step=10;
+
+	var countdown = document.getElementById('countdown');
+
+	setInterval(function () {
+		var current_date = new Date().getTime();
+		var seconds_left = (target_date - current_date) / 1000;
+		days = parseInt(seconds_left / 86400);
+		seconds_left = seconds_left % 86400;
+		hours = parseInt(seconds_left / 3600);
+		seconds_left = seconds_left % 3600;
+		min = parseInt(seconds_left / 60);
+		sec = parseInt(seconds_left % 60);
+	    //ms = parseInt(target_date-current_date);
+	    //rightNow = 1;
+	    // format countdown string + set tag value
+	    if(rightNow == 1)
+	    {
+	    	countdown.innerHTML = '<span class="days"><b>Game of Thrones is airing right now !<br>Catch it on HBO</b></span>';
+	    }
+	    else
+	    {
+		    countdown.innerHTML = '<span class="days"><b>The next episode of Game of Thrones airs in</b><br></span>'+
+		    '<span class="days">'+days+'<b> Days</b></span>'+
+		    '<span class="hours">'+hours+'<b> Hours</b></span>'+
+		    '<span class="minutes">'+min+'<b> Minutes</b></span>'+
+		    '<span class="seconds">'+sec+'<b> Seconds</b></span>';
+		}
+	      //'<span class="ms">'+ms+'ms</span>';  
+	// this is just for milliseconds only
+	  /* countdown.innerHTML = 
+	  '<span class="ms">'+ms+' ms</span>'; */
+	}, ms_step);
+</script>
+
+
+</body>
+</html>
