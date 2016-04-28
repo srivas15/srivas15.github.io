@@ -1,173 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>A Countdown of Ice and Fire</title>
+  <title>Sharoon Srivastava</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/skrollr.js"></script>
+<script src="js/_main.js"></script>
+  <script>
+    $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+});
+  </script>
+  <script>
+    $(window).scroll(function(){
+    $(".top").css("opacity", 1 - $(window).scrollTop() / 500);
+  });
+  </script>
+  <style>
+    @import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+    body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+    }
+    p {font-size: 18px;}
+    .margin {margin-bottom: 25px;}
+    .bg-1 { 
+      background-image: url("http://www.giancarlofranchini.com/images/desk-min.jpg");
+      /*("http://webaddresshere.com/wp-content/uploads/2015/12/Website-Design-Background.png");("http://3step.website/images/3step-web-bg2.jpg");*/
+      color: #ffffff;
+      background-size: cover;
+    }
+    .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+    }
+    .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+    }
+    .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+    }
+    .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+    .navbar-nav  li a:hover {
+      color: #ADD8E6 !important;
+      /*#1abc9c !important;*/
+    }
+    .blinking-cursor {
+      font-weight: 100;
+      font-size: 40px;
+      color: #000000; /*#FFFFFF;*/
+      -webkit-animation: 1s blink step-end infinite;
+      -moz-animation: 1s blink step-end infinite;
+      -ms-animation: 1s blink step-end infinite;
+      -o-animation: 1s blink step-end infinite;
+      animation: 1s blink step-end infinite;
+    }
+
+    @keyframes "blink" {
+      from, to {
+        color: transparent;
+      }
+      50% {
+        color: black;
+      }
+    }
+
+    @-moz-keyframes blink {
+      from, to {
+        color: transparent;
+      }
+      50% {
+        color: black;
+      }
+    }
+
+    @-webkit-keyframes "blink" {
+      from, to {
+        color: transparent;
+      }
+      50% {
+        color: white;
+      }
+    }
+
+    @-ms-keyframes "blink" {
+      from, to {
+        color: transparent;
+      }
+      50% {
+        color: black;
+      }
+    }
+
+    @-o-keyframes "blink" {
+      from, to {
+        color: transparent;
+      }
+      50% {
+        color: black;
+      }
+    }
+    .focus {
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+
+    .focus:hover {
+      border: 10px solid #000;
+      /*border-radius: 50%;*/
+    }
+    .fa-facebook {
+      padding:10px 14px 7px 14px;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition: .5s;
+      background-color: #2f2f2f;
+    }
+
+    .fa-facebook:hover {
+      background-color: #3b5998;
+      color: white;
+    }
+
+    .fa-linkedin {
+      padding:10px 11px 8px 11px;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition: .5s;
+      background-color: #2f2f2f;
+    }
+
+    .fa-linkedin:hover {
+      background-color: #0077bf;
+      color: white;
+    }
+
+    .fa-github {
+      padding:10px 14px 7px 14px;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition: .5s;
+      background-color: #2f2f2f;
+    }
+    .fa-github:hover {
+      background-color: white;
+      color: black;
+    }
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.top {
+  /*margin: 0;*/
+  position: relative;
+  /*width: 100%;
+  background-color: #aaa;
+  height: 300px;*/
+  opacity: 1;
+  /*text-align: center;
+  font-family: 'helvetica';
+  font-size: 80px;
+  font-weight: 100;
+  color: #fff;*/
+}
+
+
+  </style>
 </head>
 <body>
-	 <style>
-		body {
-			background-image: url("https://images5.alphacoders.com/403/403408.jpg");
-			background-size: cover;
-			background-repeat: no-repeat;
-		}
-	</style> 
-	<style>
-		#countdown span {
-			height: 300px;
-			font-size: 60px;
-			font-weight: normal;
-			margin-left: 20px;
-			margin-right: 20px;
-			margin-top: 200px;
-			color: white;
-			font-family:Arial;
-			text-align: center;
-			vertical-align: bottom;
-			/*line-height: 600px;
-			vertical-align: middle;
-			font-family: "Brush Script MT";*/
-		}
-	</style>
-	<!-- <div style="display: table; height: 600px; overflow: hidden; margin-left: 60px;">
-     <div style="display: table-cell; vertical-align: middle; text-align: center">
-       <div id="countdown" align="center">
-       </div>
-     </div>
-   </div> -->
-   <div id="countdown" style="
-   color: white;
- position:fixed;
- top:30%;
- left:5%;text-align: center"></div>
-   <div style="
-   color: white;
- position:fixed;
- bottom:0;
- left:90%;"><a href = "https://github.com/srivas15/howLongForGoT">How did I make this?</a></div>
-	<!-- <div id="countdown"></div> -->
-<script type="text/javascript">
-	// set the date we're counting down to
-	var d1start = new Date("April 24, 2016 21:00:00");
-	var d1end = new Date("April 24, 2016 22:00:00");
-	
-	var d2start = new Date("May 1, 2016 21:00:00");
-	var d2end = new Date("May 1, 2016 22:00:00");
-	
-	var d3start = new Date("May 8, 2016 21:00:00");
-	var d3end = new Date("May 8, 2016 22:00:00");
-	
-	var d4start = new Date("May 15, 2016 21:00:00");
-	var d4end = new Date("May 15, 2016 22:00:00");
-	
-	var d5start = new Date("May 22, 2016 21:00:00");
-	var d5end = new Date("May 22, 2016 22:00:00");
-	
-	var d6start = new Date("May 29, 2016 21:00:00");
-	var d6end = new Date("May 29, 2016 22:00:00");
-	
-	var d7start = new Date("June 5, 2016 21:00:00");
-	var d7end = new Date("June 5, 2016 22:00:00");
-	
-	var d8start = new Date("June 12, 2016 21:00:00");
-	var d8end = new Date("June 12, 2016 22:00:00");
-	
-	var d9start = new Date("June 19, 2016 21:00:00");
-	var d9end = new Date("June 19, 2016 22:00:00");
-	
-	var d10start = new Date("June 26, 2016 21:00:00");
-	var d10end = new Date("June 26, 2016 22:00:00");
 
-	var d11start = new Date("April 1, 2017 21:00:00");
-	
-	var curr = new Date();
-	var target_date = 0;
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <!-- <a class="navbar-brand" href="#">Sharoon Srivastava</a> -->
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-	var rightNow = 0;
+  <!-- First Container -->
+  <div class="container-fluid bg-1 text-center" style="height: 800px;">
+    <h1 class="margin top" style="font-size:500%; margin-top: 50px;">Sharoon Srivastava</h1>
+    <img src="photos/me.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Me" width="250" height="250">
+    <h2 class="top" style="font-size:200%;">I like to &lt;code&gt;<span class="blinking-cursor">|</span></h2>
+  </div>
 
-	if(((curr.getTime() > d1start.getTime()) && (curr.getTime() < d1end.getTime())) || ((curr.getTime() > d2start.getTime()) && (curr.getTime() < d2end.getTime())) || ((curr.getTime() > d3start.getTime()) && (curr.getTime() < d3end.getTime())) || ((curr.getTime() > d4start.getTime()) && (curr.getTime() < d4end.getTime())) || ((curr.getTime() > d5start.getTime()) && (curr.getTime() < d5end.getTime())) || ((curr.getTime() > d6start.getTime()) && (curr.getTime() < d6end.getTime())) || ((curr.getTime() > d7start.getTime()) && (curr.getTime() < d7end.getTime())) || ((curr.getTime() > d8start.getTime()) && (curr.getTime() < d8end.getTime())) || ((curr.getTime() > d9start.getTime()) && (curr.getTime() < d9end.getTime())) || ((curr.getTime() > d10start.getTime()) && (curr.getTime() < d10end.getTime())))
-	{
-		rightNow = 1;
-	}
-	else if(curr.getTime() < d1start.getTime())
-	{
-		target_date = d1start.getTime();
-	}
-	else if((curr.getTime() > d1end.getTime()) && (curr.getTime() < d2start.getTime()))
-	{
-		target_date = d2start.getTime();
-	}
-	else if ((curr.getTime() > d2end.getTime()) && (curr.getTime() < d3start.getTime())) 
-	{
-		target_date = d3start.getTime();
-	}
-	else if ((curr.getTime() > d3end.getTime()) && (curr.getTime() < d4start.getTime())) 
-	{
-		target_date = d4start.getTime();	
-	}
-	else if ((curr.getTime() > d4end.getTime()) && (curr.getTime() < d5start.getTime())) 
-	{
-		target_date = d5start.getTime();
-	}
-	else if ((curr.getTime() > d5end.getTime()) && (curr.getTime() < d6start.getTime())) 
-	{
-		target_date = d6start.getTime();	
-	}
-	else if ((curr.getTime() > d6end.getTime()) && (curr.getTime() < d7start.getTime())) 
-	{
-		target_date = d7start.getTime();	
-	}
-	else if ((curr.getTime() > d7end.getTime()) && (curr.getTime() < d8start.getTime())) 
-	{
-		target_date = d8start.getTime();	
-	}
-	else if ((curr.getTime() > d8end.getTime()) && (curr.getTime() < d9start.getTime())) 
-	{
-		target_date = d9start.getTime();	
-	}
-	else if ((curr.getTime() > d9end.getTime()) && (curr.getTime() < d10start.getTime())) 
-	{
-		target_date = d10start.getTime();		
-	}
-	else if (curr.getTime() > d10end.getTime())
-	{
-		target_date = d11start.getTime();
-	}
-	//document.write('<font color = "white">'+target_date+'</font>');
-	var days, hours, minutes, seconds, ms_step=10;
+  <!-- Second Container -->
+  <a name="about" id="about"></a>
+  <div class="container-fluid bg-2 text-center">
 
-	var countdown = document.getElementById('countdown');
+    <h3 class="margin" style="font-size:250%">About me</h3><hr style="border-color: inherit; margin-left: 20%;margin-right: 20%;">
+    <p style="margin-left: 7%;
+    margin-right: 7%;">I'm Sharoon Srivastava. I'm currently a junior studying computer science at Purdue University. I like to code for fun and I also happen to be extremely passionate about software and web development. Always looking for challenging opportunities, so feel free to reach out to me. </p>
+    <!-- <a href="#" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-search"></span> Search
+    </a> -->
+  </div>
 
-	setInterval(function () {
-		var current_date = new Date().getTime();
-		var seconds_left = (target_date - current_date) / 1000;
-		days = parseInt(seconds_left / 86400);
-		seconds_left = seconds_left % 86400;
-		hours = parseInt(seconds_left / 3600);
-		seconds_left = seconds_left % 3600;
-		min = parseInt(seconds_left / 60);
-		sec = parseInt(seconds_left % 60);
-	    //ms = parseInt(target_date-current_date);
-	    //rightNow = 1;
-	    // format countdown string + set tag value
-	    if(rightNow == 1)
-	    {
-	    	countdown.innerHTML = '<span class="days"><b>Game of Thrones is airing right now !<br>Catch it on HBO</b></span>';
-	    }
-	    else
-	    {
-		    countdown.innerHTML = '<span class="days"><b>The next episode of Game of Thrones airs in</b><br></span>'+
-		    '<span class="days">'+days+'<b> Days</b></span>'+
-		    '<span class="hours">'+hours+'<b> Hours</b></span>'+
-		    '<span class="minutes">'+min+'<b> Minutes</b></span>'+
-		    '<span class="seconds">'+sec+'<b> Seconds</b></span>';
-		}
-	      //'<span class="ms">'+ms+'ms</span>';  
-	// this is just for milliseconds only
-	  /* countdown.innerHTML = 
-	  '<span class="ms">'+ms+' ms</span>'; */
-	}, ms_step);
-</script>
+  <!-- Third Container (Grid) -->
+  <div class="container-fluid bg-3 text-center">    
+    <h3 class="margin" style="font-size:250%;">My Favorite Projects</h3><hr style="border-color: inherit;margin-left: 20%;margin-right: 20%;">
+    <div class="row" style="margin-left: 10%; margin-right: 10%">
+      <div class="col-sm-6">
+        <p style="font-size:150%">Prediction Premier League</p>
+        <!-- <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image"> -->
+      </div>
+      <div class="col-sm-6"> 
+        <p style="font-size:150%">Common Movies</p>
+        <!-- <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image"> -->
+      </div>
+      <!-- <div class="col-sm-4"> 
+        <p style="font-size:150%">BattleSnakes</p>
+        <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      </div> -->
+    </div>
+    <div class="row" style="margin-top:25px;margin-left: 10%; margin-right: 10%">
+      <div class="col-sm-6">
+        <p style="font-size:150%">GetGuru</p>
+        <!-- <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image"> -->
+      </div>
+      <div class="col-sm-6"> 
+        <p style="font-size:150%">Songify</p>
+        <!-- <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image"> -->
+      </div>
+      <!-- <div class="col-sm-4"> 
+        <p style="font-size:150%">Hangman</p>
+        <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      </div> -->
+    </div>
+  </div>
+  <div class="container-fluid bg-2 text-center">
+    <h3 class="margin" style="font-size:250%">When I'm not coding</h3><hr style="border-color: inherit; margin-left: 20%;margin-right: 20%;">
+    <div class="row" style="margin-left: 7%; margin-right: 7%">
+      <div class="col-sm-6">
+        <p style="font-size:150%">I watch soccer</p>
+        <div class="focus pic">
+          <a href="https://www.youtube.com/watch?v=JPiMDQxGbB8" target="_blank">
+            <img src="https://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2015/5/24/1432501289194/cbb6d722-5102-4088-bce8-2716466b8134-2060x1236.jpeg" class="img-responsive" style="display:inline; height: 350px; width: 650px;" alt="Chelsea">
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6"> 
+        <p style="font-size:150%">Chicago or New Delhi ?</p>
+        <div class="focus pic">
+          <a href="https://www.youtube.com/watch?v=JPiMDQxGbB8" target="_blank">
+            <img src="photos/chicago-skyline-2.jpg" class="img-responsive" style="display:inline; height: 350px; width: 650px;" alt="chicago/new delhi">
+          </a>
+        </div>
+      </div>
+      <!-- <div class="col-sm-4"> 
+        <p style="font-size:150%">BattleSnakes</p>
+        <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      </div> -->
+    </div>
+    <p style="margin-top: 2%; margin-left: 10%; margin-right: 10%; font-size: 100%">I also enjoy playing Fifa and eating butter chicken. Apart from that, I'm interested in philanthropy and entrepreneurship. </p>
+  </div>
+</div>
 
+<!-- Footer -->
+<a name="contact" id="contact"></a>
+<footer class="container-fluid bg-4 text-center">
+  <p style="margin-top: -2%;">Contact me</p> 
+  <div class="row" style="margin-left: 10%; margin-right: 10%">
+    <div class="col-sm-4"> 
+      <p style="font-size:75%"><a href="mailto:srivas15@purdue.edu">srivas15@purdue.edu</a></p><br><p style="font-size: 75%; margin-top: -5%;"><a href="sharoon.srivastava@gmail.com">sharoon.srivastava@gmail.com</a></p>
+      <!-- <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image"> -->
+    </div>
+    <div class="col-sm-4">
+    <p style="font-size:100%; margin-top: 5%;">
+        <a href="https://www.facebook.com/sharoon.srivastava" class="social-icon" target="_blank"> <i class="fa fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/sharoonsrivastava" class="social-icon" target="_blank"> <i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/srivas15" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a>
+      </p>
+      <!-- <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image"> -->
+    </div>
+    <div class="col-sm-4"> 
+      <p style="font-size:75%">+1(765)637-5230 (US)</p><br><p style="font-size: 75%; margin-top: -5%;">+91 9818-258-200 (India)</p>
+
+    </div>
+      <!-- <div class="col-sm-4"> 
+        <p style="font-size:150%">BattleSnakes</p>
+        <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      </div> -->
+    </div>
+  </footer>
 
 </body>
 </html>
