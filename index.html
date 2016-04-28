@@ -9,8 +9,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="js/skrollr.js"></script>
-<script src="js/_main.js"></script>
+  <script src="js/skrollr.js"></script>
+  <script src="js/_main.js"></script>
   <script>
     $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -27,207 +27,207 @@
     $('html, body').animate({
       scrollTop: $(hash).offset().top
     }, 800, function(){
-   
+
       // Add hash (#) to URL when done scrolling (default click behavior)
       window.location.hash = hash;
     });
   });
 });
-  </script>
-  <script>
-    $(window).scroll(function(){
-    $(".top").css("opacity", 1 - $(window).scrollTop() / 500);
+</script>
+<script>
+  $(window).scroll(function(){
+    $(".top1").css("opacity", 1 - $(window).scrollTop() / 450);
   });
-  </script>
-  <style>
-    @import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
-    body {
-      font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
-      color: #f5f6f7;
-    }
-    p {font-size: 18px;}
-    .margin {margin-bottom: 25px;}
-    .bg-1 { 
-      background-image: url("http://www.giancarlofranchini.com/images/desk-min.jpg");
-      /*("http://webaddresshere.com/wp-content/uploads/2015/12/Website-Design-Background.png");("http://3step.website/images/3step-web-bg2.jpg");*/
-      color: #ffffff;
-      background-size: cover;
-    }
-    .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-    }
-    .bg-3 { 
-      background-color: #ffffff; /* White */
-      color: #555555;
-    }
-    .bg-4 { 
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-    }
-    .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
-    .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-      text-align: center;
-    }
-    .navbar-nav  li a:hover {
-      color: #ADD8E6 !important;
-      /*#1abc9c !important;*/
-    }
-    .blinking-cursor {
-      font-weight: 100;
-      font-size: 40px;
-      color: #000000; /*#FFFFFF;*/
-      -webkit-animation: 1s blink step-end infinite;
-      -moz-animation: 1s blink step-end infinite;
-      -ms-animation: 1s blink step-end infinite;
-      -o-animation: 1s blink step-end infinite;
-      animation: 1s blink step-end infinite;
-    }
+</script>
+<script>
+  $(window).scroll(function(){
+    $(".top2").css("opacity", 2.5 - $(window).scrollTop() / 450);
+  });
+</script>
+<style>
+  @import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 18px;}
+  .margin {margin-bottom: 25px;}
+  .bg-1 { 
+    background-image: url("http://www.giancarlofranchini.com/images/desk-min.jpg");
+    /*("http://webaddresshere.com/wp-content/uploads/2015/12/Website-Design-Background.png");("http://3step.website/images/3step-web-bg2.jpg");*/
+    color: #ffffff;
+    background-size: cover;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  .navbar-nav  li a:hover {
+    color: #ADD8E6 !important;
+    /*#1abc9c !important;*/
+  }
+  .blinking-cursor {
+    font-weight: 100;
+    font-size: 40px;
+    color: #000000; /*#FFFFFF;*/
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
 
-    @keyframes "blink" {
-      from, to {
-        color: transparent;
-      }
-      50% {
-        color: black;
-      }
+  @keyframes "blink" {
+    from, to {
+      color: transparent;
     }
-
-    @-moz-keyframes blink {
-      from, to {
-        color: transparent;
-      }
-      50% {
-        color: black;
-      }
-    }
-
-    @-webkit-keyframes "blink" {
-      from, to {
-        color: transparent;
-      }
-      50% {
-        color: white;
-      }
-    }
-
-    @-ms-keyframes "blink" {
-      from, to {
-        color: transparent;
-      }
-      50% {
-        color: black;
-      }
-    }
-
-    @-o-keyframes "blink" {
-      from, to {
-        color: transparent;
-      }
-      50% {
-        color: black;
-      }
-    }
-    .focus {
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-      transition: all 1s ease;
-    }
-
-    .focus:hover {
-      border: 10px solid #000;
-      /*border-radius: 50%;*/
-    }
-    .fa-facebook {
-      padding:10px 14px 7px 14px;
-      -o-transition:.5s;
-      -ms-transition:.5s;
-      -moz-transition:.5s;
-      -webkit-transition:.5s;
-      transition: .5s;
-      background-color: #2f2f2f;
-    }
-
-    .fa-facebook:hover {
-      background-color: #3b5998;
-      color: white;
-    }
-
-    .fa-linkedin {
-      padding:10px 11px 8px 11px;
-      -o-transition:.5s;
-      -ms-transition:.5s;
-      -moz-transition:.5s;
-      -webkit-transition:.5s;
-      transition: .5s;
-      background-color: #2f2f2f;
-    }
-
-    .fa-linkedin:hover {
-      background-color: #0077bf;
-      color: white;
-    }
-
-    .fa-github {
-      padding:10px 14px 7px 14px;
-      -o-transition:.5s;
-      -ms-transition:.5s;
-      -moz-transition:.5s;
-      -webkit-transition:.5s;
-      transition: .5s;
-      background-color: #2f2f2f;
-    }
-    .fa-github:hover {
-      background-color: white;
+    50% {
       color: black;
     }
-a:link {
+  }
+
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+  .focus {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+
+  .focus:hover {
+    border: 10px solid #000;
+    /*border-radius: 50%;*/
+  }
+  .fa-facebook {
+    padding:10px 14px 7px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #2f2f2f;
+  }
+
+  .fa-facebook:hover {
+    background-color: #3b5998;
+    color: white;
+  }
+
+  .fa-linkedin {
+    padding:10px 11px 8px 11px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #2f2f2f;
+  }
+
+  .fa-linkedin:hover {
+    background-color: #0077bf;
+    color: white;
+  }
+
+  .fa-github {
+    padding:10px 14px 7px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #2f2f2f;
+  }
+  .fa-github:hover {
+    background-color: white;
+    color: black;
+  }
+  a:link {
     text-decoration: none;
     color: inherit;
-}
+  }
 
-a:visited {
+  a:visited {
     text-decoration: none;
     color: inherit;
-}
+  }
 
-a:hover {
+  a:hover {
     text-decoration: none;
-}
+  }
 
-a:active {
+  a:active {
     text-decoration: none;
-}
+  }
 
-.top {
-  /*margin: 0;*/
-  position: relative;
-  /*width: 100%;
-  background-color: #aaa;
-  height: 300px;*/
-  opacity: 1;
-  /*text-align: center;
-  font-family: 'helvetica';
-  font-size: 80px;
-  font-weight: 100;
-  color: #fff;*/
-}
+  .top1 {
+    position: relative;
+    opacity: 1;
+  }
+  .top2 {
+    position: relative;
+    opacity: 1;
+  }
 
 
-  </style>
+</style>
 </head>
 <body>
 
@@ -255,9 +255,9 @@ a:active {
 
   <!-- First Container -->
   <div class="container-fluid bg-1 text-center" style="height: 800px;">
-    <h1 class="margin top" style="font-size:500%; margin-top: 50px;">Sharoon Srivastava</h1>
-    <img src="photos/me.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Me" width="250" height="250">
-    <h2 class="top" style="font-size:200%;">I like to &lt;code&gt;<span class="blinking-cursor">|</span></h2>
+    <h1 class="margin top1" style="font-size:500%; margin-top: 50px;">Sharoon Srivastava</h1>
+    <img src="photos/me.jpg" class="top1 img-responsive img-circle margin" style="display:inline" alt="Me" width="250" height="250">
+    <h2 class="top1" style="font-size:200%;">I like to &lt;code&gt;<span class="blinking-cursor">|</span></h2>
   </div>
 
   <!-- Second Container -->
@@ -265,8 +265,9 @@ a:active {
   <div class="container-fluid bg-2 text-center">
 
     <h3 class="margin" style="font-size:250%">About me</h3><hr style="border-color: inherit; margin-left: 20%;margin-right: 20%;">
-    <p style="margin-left: 7%;
-    margin-right: 7%;">I'm Sharoon Srivastava. I'm currently a junior studying computer science at Purdue University. I like to code for fun and I also happen to be extremely passionate about software and web development. Always looking for challenging opportunities, so feel free to reach out to me. </p>
+    <p class="top2" style="margin-left: 7%;margin-right: 7%;">
+      I'm Sharoon Srivastava. I'm currently a junior studying computer science at Purdue University. I like to code for fun and I also happen to be extremely passionate about software and web development. Always looking for challenging opportunities, so feel free to reach out to me. 
+    </p>
     <!-- <a href="#" class="btn btn-default btn-lg">
       <span class="glyphicon glyphicon-search"></span> Search
     </a> -->
@@ -342,7 +343,7 @@ a:active {
       <!-- <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image"> -->
     </div>
     <div class="col-sm-4">
-    <p style="font-size:100%; margin-top: 5%;">
+      <p style="font-size:100%; margin-top: 5%;">
         <a href="https://www.facebook.com/sharoon.srivastava" class="social-icon" target="_blank"> <i class="fa fa-facebook"></i></a>
         <a href="https://www.linkedin.com/in/sharoonsrivastava" class="social-icon" target="_blank"> <i class="fa fa-linkedin"></i></a>
         <a href="https://github.com/srivas15" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a>
