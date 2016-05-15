@@ -36,12 +36,7 @@
 </script>
 <script>
   $(window).scroll(function(){
-    $(".top1").css("opacity", 1 - $(window).scrollTop() / 450);
-  });
-</script>
-<script>
-  $(window).scroll(function(){
-    $(".top2").css("opacity", 2.5 - $(window).scrollTop() / 450);
+    $(".top1").css("opacity", 1 - $(window).scrollTop() / 800);
   });
 </script>
 <style>
@@ -221,11 +216,6 @@
     position: relative;
     opacity: 1;
   }
-  .top2 {
-    position: relative;
-    opacity: 1;
-  }
-
 
 </style>
 </head>
@@ -255,8 +245,9 @@
 
   <!-- First Container -->
   <div class="container-fluid bg-1 text-center" style="height: 800px;">
-    <h1 class="margin top1" style="font-size:500%; margin-top: 50px;">Sharoon Srivastava</h1>
-    <img src="photos/me.jpg" class="top1 img-responsive img-circle margin" style="display:inline" alt="Me" width="250" height="250">
+    <h1 class="margin top1" style="font-size:350%; margin-top: 50px;">Sharoon Srivastava</h1>
+    <!-- <h1 style="font-size:500%; margin-top: 50px;">Sharoon Srivastava</h1> -->
+    <img src="photos/me.jpg" class="top1 img-responsive img-circle margin" style="display:inline; margin-top: 30px;" alt="Me" width="250" height="250">
     <h2 class="top1" style="font-size:200%;">I like to &lt;code&gt;<span class="blinking-cursor">|</span></h2>
   </div>
 
@@ -265,7 +256,7 @@
   <div class="container-fluid bg-2 text-center">
 
     <h3 class="margin" style="font-size:250%">About me</h3><hr style="border-color: inherit; margin-left: 20%;margin-right: 20%;">
-    <p class="top2" style="margin-left: 7%;margin-right: 7%;">
+    <p style="margin-left: 7%;margin-right: 7%;">
       I'm Sharoon Srivastava. I'm currently a junior studying computer science at Purdue University. I like to code for fun and I also happen to be extremely passionate about software and web development. Always looking for challenging opportunities, so feel free to reach out to me. 
     </p>
     <!-- <a href="#" class="btn btn-default btn-lg">
@@ -319,9 +310,7 @@
       <div class="col-sm-6"> 
         <p style="font-size:150%">Chicago or New Delhi ?</p>
         <div class="focus pic">
-          <a href="https://www.youtube.com/watch?v=JPiMDQxGbB8" target="_blank">
             <img src="photos/chicago-skyline-2.jpg" class="img-responsive" style="display:inline; height: 350px; width: 650px;" alt="chicago/new delhi">
-          </a>
         </div>
       </div>
       <!-- <div class="col-sm-4"> 
